@@ -11,6 +11,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Screen;
 import net.mostlyoriginal.api.component.script.Schedule;
 import net.mostlyoriginal.game.component.logic.Transition;
+import net.mostlyoriginal.game.component.Grunt;
 
 /**
  * Transition between screens.
@@ -22,6 +23,7 @@ public class TransitionSystem extends EntityProcessingSystem {
 
 	protected ComponentMapper<Transition> mTransition;
 	private Game game;
+	private Grunt grunt;
 
 	public TransitionSystem( Game game ) {
 		super(Aspect.all(Transition.class));
